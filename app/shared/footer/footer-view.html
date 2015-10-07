@@ -1,0 +1,119 @@
+<footer>
+    <div class="nav-btn">
+        <a href="javascript:void(0);" ng-click="showFooter = !showFooter" ng-class="{'close-nav' : showFooter}" ng-init="showFooter = 1">
+            <i class="icons-footer-plus"></i>
+        </a>
+    </div>
+    <div id="f-open" ng-show="showFooter" data-ng-controller="footerController as vm">
+        <div class="footer-columns">
+            <div class="col25 f-col-1">
+                <div class="title">
+                    <h6>CONTACTS</h6>
+                    <div class="title-underline"></div>
+                </div>
+                <ul class="contact-info">
+                    <li>
+                        <i class="icons-location-pin"></i> Dubai, UAE
+                    </li>
+                    <li>
+                        <i class="icons-email"></i> contact@asensokolov.com
+                    </li>
+                    <li>
+                        <i class="icons-phone"></i> +971 569 120 557
+                    </li>
+                    <li>
+                        <i class="icons-phone"></i> +359 883 360 672
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/Asensokolovcom" title="Asen Sokolov Facebook Fan Page" class="icons-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/AsenSokolov" title="Asen Sokolov Twitter Page" class="icons-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/profile/view?id=209214898" title="Asen Sokolov LinkedIn Profile" class="icons-linkedIn"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/+AsenSokolov" title="Asen Sokolov Google+ Page" class="icons-google-plus"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/asensokolov/" title="Asen Sokolov Pinterest" class="icons-pinterest"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/asoul" title="Asen Sokolov Behance Profile" class="icons-behance"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col25 f-col-2">
+                <div class="title">
+                    <h6>LATEST NEWS</h6>
+                    <div class="title-underline"></div>
+                </div>
+                <ul>
+                    <li ng-repeat="article in vm.news">
+                        <a href="{{article.link}}">
+                            <i class="icons-bullet-point"></i>{{article.title}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col25 f-col-3">
+                <div class="title">
+                    <h6>TESTIMONIALS</h6>
+                    <div class="title-underline"></div>
+                </div>
+                <div id="testimonials-footer">
+                    <slick infinite="true" dots="true" adaptive-height="true">
+                        <div ng-repeat="testimonial in vm.testimonials">
+                            <img src="{{testimonial.avatar}}" alt="{{testimonial.name}}"/>
+                            <h4>{{testimonial.name}}</h4>
+                            <h5>{{testimonial.qualification}}</h5>
+                            <h6>{{testimonial.company}}</h6>
+                            <div class="clr"></div>
+                            <p>{{testimonial.description}}</p>
+                        </div>
+                    </slick>
+                </div>
+            </div>
+            <div class="col25 f-col-4">
+                <div class="title">
+                    <h6>NEWSLETTER</h6>
+                    <div class="title-underline"></div>
+                </div>
+                <newsletter-form></newsletter-form>
+            </div>
+        </div>
+        <div class="all-rights">
+            <p>AsenSokolov.com © {{vm.currentDate | date:'yyyy'}}. All Rights reserved.</p>
+        </div>
+    </div>
+    <div id="f-close" ng-show="!showFooter">
+        <p>AsenSokolov.com © 2015. All Rights reserved.</p>
+        <ul class="social-icons">
+            <li>
+                Follow me:
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Asensokolovcom" title="Asen Sokolov Facebook Fan Page" class="icons-facebook"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/AsenSokolov" title="Asen Sokolov Twitter Page" class="icons-twitter"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/profile/view?id=209214898" title="Asen Sokolov LinkedIn Profile" class="icons-linkedIn"></a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/u/0/+AsenSokolov" title="Asen Sokolov Google+ Page" class="icons-google-plus"></a>
+            </li>
+            <li>
+                <a href="https://www.pinterest.com/asensokolov/" title="Asen Sokolov Pinterest" class="icons-pinterest"></a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/asoul" title="Asen Sokolov Behance Profile" class="icons-behance"></a>
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+</footer>
