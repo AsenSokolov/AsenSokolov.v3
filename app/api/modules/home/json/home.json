@@ -1,0 +1,30 @@
+{
+  "title" : "HOME",
+  "descr" : "descr",
+  "keywords": "keywords",
+  "coverTitle" : "Hi!",
+  "coverDescription" : "Welcome to My Home!",
+  "coverImage" : "assets/img/covers/home-cover.jpg",
+  "projects" : [{
+    "position"  : 1,
+    "title" : "Santa Yourself",
+    "image" : "assets/img/projects/santa-yourself.jpg",
+    "link"  : "link-1"
+  },{
+    "position": "2",
+    "title": "Brand Creative",
+    "image": "assets/img/projects/brand-creative.jpg",
+    "link": "link-2"
+  },{
+    "position": "3",
+    "title": "Hurricane Technologies",
+    "image": "assets/img/projects/hurricane-technologies.jpg",
+    "link": "link-3"
+  },{
+    "position": "4",
+    "title": "Aglika",
+    "image": "assets/img/projects/aglika.jpg",
+    "link": "link-4"
+  }]
+
+}

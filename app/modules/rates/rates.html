@@ -1,0 +1,144 @@
+<div id="rates">
+    <div id="rates-packages" class="section-title">
+        <div class="title-wrapper">
+            <h4>PACKAGES</h4>
+            <div class="title-underline"></div>
+        </div>
+    </div>
+
+    <div id="plans-wrapper" ng-controller="PlanController as vm">
+        <div id="plans">
+            <div class="plan hvr-float" ng-click="vm.selectPlan(1)" ng-class="{active: vm.isSelected(1)}">
+                <div class="plan-head">
+                    <div class="plan-title">
+                        <div class="title-wrapper">
+                            <h5>START UP</h5>
+                            <div class="title-underline"></div>
+                        </div>
+                    </div>
+                    <div class="start-from">Start From</div>
+                    <div class="prace-aed">8 500 AED</div>
+                    <div class="prace-eu">2200 EURO</div>
+                </div>
+                <div class="plan-descr">
+                    <div>Up to 8 Pages</div>
+                    <div>Web Design</div>
+                    <div>Mobile Friendly</div>
+                    <div>Tutorials: How it Works?</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>Testing and Launch</div>
+                </div>
+                <div class="get-started">GET STARTED</div>
+                <div class="arrow-active"></div>
+            </div>
+
+            <div class="plan popular-choise hvr-float" ng-click="vm.selectPlan(2)" ng-class="{active: vm.isSelected(2)}">
+                <div class="popular-choise-text">POPULAR CHOICE </div>
+                <div class="plan-head">
+                    <div class="plan-title">
+                        <div class="title-wrapper">
+                            <h5>BUSINESS</h5>
+                            <div class="title-underline"></div>
+                        </div>
+                    </div>
+                    <div class="start-from">Start From</div>
+                    <div class="prace-aed">17 000 AED</div>
+                    <div class="prace-eu">4200 EURO</div>
+                </div>
+                <div class="plan-descr">
+                    <div>Up to 8 Pages</div>
+                    <div>Web Design</div>
+                    <div>Mobile Friendly</div>
+                    <div>Tutorials: How it Works?</div>
+                    <div>Performance Optimizations</div>
+                    <div>3rd Part Plugins</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>---</div>
+                    <div>30 Days Free Support</div>
+                    <div>Testing and Launch</div>
+                </div>
+                <div class="get-started">GET STARTED</div>
+                <div class="arrow-active"></div>
+            </div>
+
+            <div class="plan hvr-float" ng-click="vm.selectPlan(3)" ng-class="{active: vm.isSelected(3)}">
+                <div class="plan-head">
+                    <div class="plan-title">
+                        <div class="title-wrapper">
+                            <h5>PREMIUM</h5>
+                            <div class="title-underline"></div>
+                        </div>
+                    </div>
+                    <div class="start-from">Start From</div>
+                    <div class="prace-aed">35 000 AED</div>
+                    <div class="prace-eu">8500 EURO</div>
+                </div>
+                <div class="plan-descr">
+                    <div>Up to 8 Pages</div>
+                    <div>Web Design</div>
+                    <div>Mobile Friendly</div>
+                    <div>Tutorials: How it Works?</div>
+                    <div>Performance Optimizations</div>
+                    <div>3rd Part Plugins</div>
+                    <div>Custom Plugins</div>
+                    <div>Custom Database</div>
+                    <div>Website Analyzer</div>
+                    <div>1 Free Consultation</div>
+                    <div>60 Days Free Support</div>
+                    <div>Testing and Launch</div>
+                </div>
+                <div class="get-started">GET STARTED</div>
+                <div class="arrow-active"></div>
+            </div>
+        </div>
+
+        <div id="plans-examples">
+            <div class="plan-examples" ng-show="vm.isSelected({{$index + 1}})" ng-repeat="plan in vm.plans">
+                <div class="section-title">
+                    <div class="title-wrapper">
+                        <h4>{{plan.title}}</h4>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+
+                <p class="plan-descr" ng-bind-html="plan.descr"></p>
+
+                <div class="examples">
+                    <a href="{{project.link}}" target="_blank" ng-repeat="project in plan.projects">
+                        <div class="overlay">
+                            <div>
+                                <i class="icons-link-arrow"></i>
+                                <p>{{project.title}}</p>
+                            </div>
+                        </div>
+                        <img ng-src="{{project.image}}" alt="{{project.title}}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="make-it-happen">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>MAKE IT HAPPEN</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <p>
+            You have an Idea, business or just want to update your current website.<br/>
+            Take the first step to your brand new digital identity!
+        </p>
+        <div class="button-wrapper">
+            <a href="/contacts" title="SEND YOUR INQUIRY" class="btn-style-fill">SEND YOUR INQUIRY</a>
+        </div>
+    </div>
+</div>

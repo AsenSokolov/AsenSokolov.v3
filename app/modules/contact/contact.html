@@ -1,0 +1,349 @@
+<div id="contacts">
+    <div id="locations">
+        <div class="city">
+            <i class="icons-map-pin"></i>
+            <span>DUBAI, UAE</span>
+        </div>
+
+        <div class="v-line"></div>
+
+        <div class="city">
+            <i class="icons-map-pin"></i>
+            <span>SOFIA, BULGARIA</span>
+        </div>
+
+        <div class="v-line"></div>
+
+        <div class="city">
+            <i class="icons-map-pin"></i>
+            <span>LONDON, UK</span>
+        </div>
+    </div>
+
+    <!--<div id="your-project-form" ng-hide="true">-->
+    <div id="your-project-form" ng-show="formType >= 1">
+
+        <form id="formProject" name="formProject" ng-show="formType === 1 && formSubmitted === false" novalidate method="POST" >
+            <a href="javascript:void(0);" class="close icons-close" ng-click="showForms(0)"></a>
+
+            <!-- STEP 1 -->
+
+            <div id="form-step-1" ng-show="checkSteps(1,1);">
+                <h5>TYPE OF YOUR PROJECT?</h5>
+                <h6>Let's start from the beginning!</h6>
+
+                <div class="row">
+                    <div class="col-1 column">
+                        <div ng-repeat="itemStep1 in stepOneItems.slice(0, 4)">
+                            <md-checkbox ng-checked="exists(itemStep1, userData.selectedStepOne)" ng-click="toggle(itemStep1, userData.selectedStepOne)" class="blue">
+                                {{ itemStep1 }}
+                            </md-checkbox>
+                        </div>
+                    </div>
+                    <div class="col-2 column">
+                        <div ng-repeat="itemStep1 in stepOneItems.slice(4, 8)">
+                            <md-checkbox ng-checked="exists(itemStep1, userData.selectedStepOne)" ng-click="toggle(itemStep1, userData.selectedStepOne)" class="blue">
+                                {{ itemStep1 }}
+                            </md-checkbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+
+            <div id="form-step-2" ng-show="checkSteps(2,1);">
+                <h5>WHAT YOU NEED?</h5>
+                <h6>Let's get to the heart of the matter!</h6>
+
+                <div class="row">
+                    <div class="col-1 column">
+                        <div ng-repeat="itemStep2 in stepTwoItems.slice(0, 4)">
+                            <md-checkbox ng-checked="exists(itemStep2, userData.selectedStepTwo)" ng-click="toggle(itemStep2, userData.selectedStepTwo)" class="blue">
+                                {{ itemStep2 }}
+                            </md-checkbox>
+                        </div>
+                    </div>
+                    <div class="col-2 column">
+                        <div ng-repeat="itemStep2 in stepTwoItems.slice(4, 8)">
+                            <md-checkbox ng-checked="exists(itemStep2, userData.selectedStepTwo)" ng-click="toggle(itemStep2, userData.selectedStepTwo)" class="blue">
+                                {{ itemStep2 }}
+                            </md-checkbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+
+            <div id="form-step-3" ng-show="checkSteps(3,1);">
+                <h5>PLANNING</h5>
+                <h6>Let's stick to the deadline!</h6>
+
+                <div class="row">
+                    <div class="calendar">
+                        <label class="calendar-label">Delivary Date</label>
+                        <datepicker date-format="MMMM d, y" date-min-limit="{{userData.today | date:'MMMM d, y'}}">
+                            <input ng-model="userData.date" type="text" class="show-date" placeholder="Choose a date"/>
+                        </datepicker>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="no-deadline">
+                        <div class="no-line"></div>
+                        <a href="javascript:void(0);" ng-click="userData.date='No Idea'">NO IDEA?</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+
+            <div id="form-step-4" ng-show="checkSteps(4,1);">
+                <h5>BUDGETING</h5>
+                <h6>Unpleasant things must also be discussed!</h6>
+
+                <div class="row">
+                    <div class="col-1 column">
+                        <md-radio-group ng-model="userData.budget">
+                            <md-radio-button value="1000 Euro - 4000 Euro">1000&#8364 - 4000&#8364</md-radio-button>
+                            <md-radio-button value="4000 Euro - 8000 Euro">4000&#8364 - 8000&#8364</md-radio-button>
+                            <md-radio-button value="8000 Euro - 20 000 Euro">8000&#8364 - 20 000&#8364</md-radio-button>
+                        </md-radio-group>
+                    </div>
+                    <div class="col-2 column">
+                        <md-radio-group ng-model="userData.budget">
+                            <md-radio-button value="20 000 Euro - 40 000 Euro">20 000&#8364 - 40 000&#8364</md-radio-button>
+                            <md-radio-button value="OVER 40 000 Euro">Over 40 000&#8364</md-radio-button>
+                            <md-radio-button value="First, let's talk">First, let's talk</md-radio-button>
+                        </md-radio-group>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 5 -->
+
+            <div id="form-step-5" ng-show="checkSteps(5,1);">
+                <h5>SOMETHING ELSE TO ADD?</h5>
+                <h6>You're almost done!</h6>
+
+                <div class="row">
+                    <div class="more-info">
+                        <md-input-container>
+                            <label class="field-label">Competitors</label>
+                            <textarea ng-model="userData.competitors" name="competitors" columns="1" class="form-field-style"></textarea>
+                        </md-input-container>
+                        <md-input-container name="additionalInfo">
+                            <label class="field-label">Additional info</label>
+                            <textarea ng-model="userData.additionalInfo" name="additionalInfo" columns="1" class="form-field-style"></textarea>
+                        </md-input-container>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 6 -->
+
+            <div id="form-step-6" ng-show="checkSteps(6,1);">
+                <h5>WHO YOU ARE?</h5>
+                <h6>Tell me about you!</h6>
+
+                <div class="row">
+                    <div class="col-1 column">
+                        <md-input-container>
+                            <label class="field-label">Name*</label>
+                            <input ng-model="userData.name" type="text" name="name" class="form-field-style" ng-minlength="3" required>
+                            <span  class="form-error" ng-show="formProject.name.$dirty && formProject.name.$invalid">Please fill more the 3 Letters!!!</span>
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label class="field-label">Email*</label>
+                            <input ng-model="userData.email" type="email" name="email" class="form-field-style" ng-pattern="/^([a-z0-9+_-]+)(.[a-z0-9+_-]+)*@([a-z0-9-]+.)+[a-z]{2,}$/i" required>
+                            <span  class="form-error" ng-show="formProject.email.$dirty && formProject.email.$error.email || formProject.email.$error.pattern">Invalid email address!</span>
+                        </md-input-container>
+                    </div>
+                    <div class="col-2 column">
+                        <md-input-container>
+                            <label class="field-label">Company</label>
+                            <input ng-model="userData.company" type="text" class="form-field-style">
+                        </md-input-container>
+                        <md-input-container>
+                            <label class="field-label">Phone</label>
+                            <input ng-model="userData.phone" type="text" class="form-field-style">
+                        </md-input-container>
+                        <md-input-container class="h-subject">
+                            <label class="field-label">Subject</label>
+                            <input ng-model="userData.subject" type="text" class="form-field-style">
+                        </md-input-container>
+                    </div>
+
+                    <div class="full-row-el">
+                        <label class="field-label">How did you find me? *</label>
+
+                        <div class="as-custom-select" ng-click="openDropDown($event);" ng-class="{'drop-down-open' : ddOpen}">{{userData.selectedHowToFindUs}}</div>
+                        <span  class="form-error" ng-show="userData.selectedHowToFindUs == '---'">Please select one of the follow options!!!</span>
+                        <ul ng-show="ddOpen">
+                            <li ng-repeat="option in stepSixItems" ng-click="selectHowToFindUs(option)">
+                                {{option}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="form-navigation">
+                <button id="btn-next" class="form-nav-btn hvr-grow-shadow" ng-click="nextStep();" ng-disabled="disableBtn()">
+                    <span ng-show="checkSteps(6,3);">NEXT STEP</span>
+                    <i class="icons-next-arrow" ng-show="checkSteps(6,3);"></i>
+                    <span ng-show="checkSteps(6,1);">SUBMIT</span>
+                </button>
+            </div>
+
+            <div id="form-progress">
+                <div id="checkpoint-1" class="checkpoint step-complete" ng-class="{'step-complete' : checkSteps(1,2)}">
+                    <div class="circle">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="progress-line">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="checkpoint-2" class="checkpoint" ng-class="{'step-complete' : checkSteps(2,2)}">
+                    <div class="circle">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="progress-line">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="checkpoint-3" class="checkpoint" ng-class="{'step-complete' : checkSteps(3,2)}">
+                    <div class="circle">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="progress-line">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="checkpoint-4" class="checkpoint" ng-class="{'step-complete' : checkSteps(4,2)}">
+                    <div class="circle">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="progress-line">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="checkpoint-5" class="checkpoint" ng-class="{'step-complete' : checkSteps(5,2)}">
+                    <div class="circle">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="progress-line">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="checkpoint-6" class="checkpoint" ng-class="{'step-complete' : checkSteps(6,2)}">
+                    <div class="circle">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form id="formSayHi" name="formSayHi" ng-show="formType === 2 && formSubmitted === false" >
+            <a href="javascript:void(0);" class="close icons-close" ng-click="showForms(0)"></a>
+            <h5>SAY, HI!</h5>
+            <h6>Don't be a stranger!</h6>
+
+            <div class="row">
+                <div class="col-1 column">
+                    <md-input-container>
+                        <label class="field-label">Name*</label>
+                        <input ng-model="shortFormData.name" type="text" name="name" class="form-field-style" ng-minlength="3" required>
+                        <span class="form-error" ng-show="formSayHi.name.$dirty && formSayHi.name.$invalid">Please fill more the 3 Letters!!!</span>
+                    </md-input-container>
+                    <md-input-container>
+                        <label class="field-label">Subject*</label>
+                        <input ng-model="shortFormData.subjectMessage" type="text" name="subjectMessage" class="form-field-style" ng-minlength="3" required>
+                        <span class="form-error" ng-show="formSayHi.subjectMessage.$dirty && formSayHi.subjectMessage.$invalid">Please fill more the 3 Letters!!!</span>
+                    </md-input-container>
+                </div>
+                <div class="col-2 column">
+                    <md-input-container>
+                        <label class="field-label">Email*</label>
+                        <input ng-model="shortFormData.email" type="email" name="email" class="form-field-style" ng-pattern="/^([a-z0-9+_-]+)(.[a-z0-9+_-]+)*@([a-z0-9-]+.)+[a-z]{2,}$/i" required>
+                        <span class="form-error" ng-show="formSayHi.email.$dirty && formSayHi.email.$error.email || formProject.email.$error.pattern">Invalid email address!</span>
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label class="field-label">Phone</label>
+                        <input ng-model="shortFormData.phone" type="text" class="form-field-style">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class="full-row-el">
+                <label class="field-label">How did you find me? *</label>
+
+                <div class="as-custom-select" ng-click="openDropDown($event);" ng-class="{'drop-down-open' : ddOpen}">{{shortFormData.selectedHowToFindUs}}</div>
+                <span  class="form-error" ng-show="shortFormData.selectedHowToFindUs == '---'">Please select one of the follow options!!!</span>
+                <ul ng-show="ddOpen">
+                    <li ng-repeat="option in stepSixItems" ng-click="selectHowToFindUsShortForm(option)">
+                        {{option}}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="full-row-el">
+                <md-input-container class="h-subject">
+                    <label class="field-label">Subject</label>
+                    <input ng-model="shortFormData.subject" type="text" class="form-field-style">
+                </md-input-container>
+                <md-input-container name="message">
+                    <label class="field-label">Message*</label>
+                    <textarea ng-model="shortFormData.message" name="message" columns="1" class="form-field-style" ng-minlength="10" required></textarea>
+                </md-input-container>
+                <span class="form-error" ng-show="formSayHi.message.$dirty && formSayHi.message.$invalid">Please fill more the 10 Letters!!!</span>
+            </div>
+
+            <div id="form-navigation">
+                <button id="btn-submit" class="form-nav-btn hvr-grow-shadow" ng-click="submitMessage();" ng-disabled="disableShortFormBtn();">
+                    <span>SUBMIT</span>
+                </button>
+            </div>
+        </form>
+
+        <div id="thank-you-msg" ng-show="formSubmitted === true">
+            <div class="msg-wrapper">
+                <i class="icons-success"></i>
+                <h5 ng-show="formType === 1">Thank you for your inquiry!</h5>
+                <h5 ng-show="formType === 2">Thank you for your message!</h5>
+                <h6>Relax and wait for my reply in 48 Hours!</h6>
+                <div id="form-navigation">
+                    <button id="btn-close" class="form-nav-btn hvr-grow-shadow" ng-click="showForms(0)" >
+                        <span>CLOSE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-options" ng-show="formType === 0">
+        <div id="option-1" class="option" ng-show="formType === 0">
+            <div class="option-wapper" >
+                <div class="option-title" >
+                    Already know what you want?<br/>
+                    Let's save some time!
+                </div>
+                <a href="javascript:void(0);" title="Talk about your project" class="btn-style-border" ng-click="showForms(1)">Talk about your project</a>
+            </div>
+            <div class="color"></div>
+        </div>
+        <div id="option-2" class="option" ng-show="formType === 0">
+            <div class="option-wapper">
+                <div class="option-title">
+                    Still don’t know what you want?<br/>
+                    Or just want to say, HI!
+                </div>
+                <a href="javascript:void(0);" title="Talk about your project" class="btn-style-border" ng-click="showForms(2)">Contact Me</a>
+            </div>
+            <div class="color"></div>
+        </div>
+    </div>
+</div>

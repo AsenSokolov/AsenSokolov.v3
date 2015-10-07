@@ -1,0 +1,117 @@
+<div id="showcases">
+    <div id="clients">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>WALL OF FAME</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+
+        <ul>
+            <li>
+                <img src="assets/img/clients/exxon-logo.png" alt="Exxon Mobil"/>
+            </li>
+            <li>
+                <img src="assets/img/clients/lg.png" alt="LG"/>
+            </li>
+            <li>
+                <img src="assets/img/clients/visa.png" alt="Visa"/>
+            </li>
+            <li>
+                <img src="assets/img/clients/hot-wheels.png" alt="Hot Wheels"/>
+            </li>
+            <li>
+                <img src="assets/img/clients/kpmg.png" alt="KMPG" />
+            </li>
+            <li>
+                <img src="assets/img/clients/samsung.png" alt="Samsung" />
+            </li>
+            <li>
+                <img src="assets/img/clients/g2.png" alt="Gatorade" />
+            </li>
+            <li>
+                <img src="assets/img/clients/scotiabank.png" alt="Scotia Bank" />
+            </li>
+            <li>
+                <img src="assets/img/clients/bc.png" alt="Brand Creative" />
+            </li>
+            <li>
+                <img src="assets/img/clients/petro-canada.png" alt="Petro Canada" />
+            </li>
+            <li>
+                <img src="assets/img/clients/meridian.png" alt="Meridian" />
+            </li>
+            <li>
+                <img src="assets/img/clients/gibson.png" alt="Gibson" />
+            </li>
+            <li>
+                <img src="assets/img/clients/canadian-tire.png" alt="Canadian Tire" />
+            </li>
+            <li>
+                <img src="assets/img/clients/tm.png" alt="Taylor Made" />
+            </li>
+            <li>
+                <img src="assets/img/clients/pc.png" alt="President Choice" />
+            </li>
+            <li>
+                <img src="assets/img/clients/pixel-hunters.png" alt="Pixel Hunters" />
+            </li>
+            <li>
+                <img src="assets/img/clients/middle-east-talents-awards.png" alt="Middle East Talents Awards" />
+            </li>
+            <li>
+                <img src="assets/img/clients/civolution.png" alt="Civolution" />
+            </li>
+            <li>
+                <img src="assets/img/clients/aglika.png" alt="Aglika" />
+            </li>
+            <li>
+                <img src="assets/img/clients/jk-logo.png" alt="Julia Kontogruni" />
+            </li>
+            <li>
+                <img src="assets/img/clients/cappmea.png" alt="CAPP MEA" />
+            </li>
+            <li>
+                <img src="assets/img/clients/m2.png" alt="M2" />
+            </li>
+            <li>
+                <img src="assets/img/clients/di-foto-logo.png" alt="DIFOTO COMPANY" />
+            </li>
+            <li>
+                <img src="assets/img/clients/konutherm.png" alt="Konutherm" />
+            </li>
+            <li>
+                <img src="assets/img/clients/infiniti.png" alt="Infiniti" />
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+
+    <div id="projects">
+        <div class="wrapper">
+            <div id="project-{{$index}}" class="project"  ng-repeat="project in projects | limitTo: paginationLimit()" ng-init="$last ? setShowcasesAnimations() : null" style="background-image:url('{{project.bgMainImage}}'); background-repeat: {{project.bgMainRepeat}}; background-position: {{project.bgMainPosition}}; background-size: {{project.bgMainSize}}; background-color: {{project.bgMainColor}};">
+                <div class="wrapper">
+                    <div class="left" style="background-image:url('{{project.bgLeftImage}}'); background-repeat: {{project.bgLeftRepeat}}; background-position: {{project.bgLeftPosition}}; background-color: {{project.bgLeftColor}};">
+                        <div class="half-wrapper">
+                            <img ng-src="{{project.projectLogo}}"/>
+                            <h6>{{project.service}}</h6>
+                            <a href="{{project.link}}" style="background:{{project.bgLinkColor}};" class="hvr-buzz-out">
+                                <i class="icons-btn-project-arrow"></i>
+                                <span>View Showcase</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right" style="background-image:url('{{project.bgRightImage}}'); background-repeat: {{project.bgRightRepeat}}; background-position: {{project.bgRightPosition}}; background-color: {{project.bgRightColor}};">
+                        <div class="half-wrapper">
+                            <img ng-src="{{project.projectImage}}" alt="{{project.title}}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-load-more-cont">
+            <a href="javascript:void(0);" ng-show="hasMoreItemsToShow()" ng-click="showMoreItems()" class="btn-style-fill">LOAD MORE</a>
+        </div>
+    </div>
+
+</div>

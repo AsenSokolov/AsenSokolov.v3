@@ -1,0 +1,29 @@
+{
+  "title" : "Santa Yourself",
+  "descr" : "descr",
+  "keywords": "keywords",
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/santa-yourself/santa-yourself-cover.jpg",
+
+  "service": "Company Website",
+  "projectImage": "assets/img/showcases/santa-yourself/santa-yourself-project-image.png",
+
+  "generalInfo": "Ingram Micro helps businesses fully realize the promise of technology™—helping them maximize the value of the technology that they make, sell or use. With its vast global infrastructure and focus on cloud, mobility, supply chain and technology solutions, Ingram Micro enables business partners to operate more efficiently and successfully in the markets they serve.<br/><br/>No other company delivers as broad and deep a spectrum of technology and supply chain services to businesses around the world. Founded in 1979, Ingram Micro’s role as a leader and innovator in technology and supply chain services has fueled its rise to the 69th ranked corporation in the FORTUNE 500®. ",
+
+  "typographyMain": "Helvetica Light",
+  "typographySecondary": "Helvetica Bold",
+  "typographyNative": "Arial",
+  "typographyDescr": "Helvetica is a widely used sans-serif typeface. Over the years a wide range of variants have been released in different weights, widths and sizes, as well as matching designs for a range of non-Latin alphabets.",
+  "typographyImage": "assets/img/showcases/santa-yourself/santa-yourself-typography.png",
+
+  "creativeImage": "http://asensokolov.dev/assets/img/showcases/santa-yourself/santa-yourself-creative.png",
+  "creativeDescr": "Ingram Micro helps businesses fully realize the promise of technology™—helping them maximize the value of the technology that they make, sell or use. With its vast global infrastructure and focus on cloud, mobility, supply chain and technology solutions, Ingram Micro enables business partners to operate more efficiently and successfully in the markets they serve.<br/><br/>No other company delivers as broad and deep a spectrum of technology and supply chain services to businesses around the world. Founded in 1979, Ingram Micro’s role as a leader and innovator in technology and supply chain services has fueled its rise to the 69th ranked corporation in the FORTUNE 500®. ",
+
+  "mobileImage": "assets/img/showcases/santa-yourself/santa-yourself-mobile-friendly.png",
+
+
+  "mockUpImage": "assets/img/showcases/santa-yourself/santa-yourself-image-mockup.png",
+  "buildOnText": "Built on the Cloud",
+  "buildOnImage": "assets/img/showcases/santa-yourself/santa-yourself-server.png"
+}

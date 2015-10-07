@@ -1,0 +1,101 @@
+<div id="showcase-project">
+    <div id="project-main-image">
+        <div class="browser-bar">
+            <i class="circle-1"></i>
+            <i class="circle-2"></i>
+            <i class="circle-3"></i>
+        </div>
+        <img ng-src="{{project.projectImage}}" alt="{{project.title}}"/>
+    </div>
+    <div class="clr"></div>
+
+    <div id="project-general-info">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>General Information</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <p ng-bind-html="project.generalInfo"></p>
+    </div>
+
+    <div id="project-typography">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>Typography</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <div class="typography-info">
+            <div class="left">
+                <h5>{{project.typographyMain}}</h5>
+                <h6>Main Typography</h6>
+
+                <h5>{{project.typographySecondary}}</h5>
+                <h6>Secondary Typography</h6>
+
+                <h5>{{project.typographyNative}}</h5>
+                <h6>Native Typography</h6>
+
+                <p ng-bind-html="project.typographyDescr"></p>
+            </div>
+            <div class="right">
+                <img ng-src="{{project.typographyImage}}" alt="{{project.title}} Typography" class="img-typography"/>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+
+    <div id="project-creative">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>Creative</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <img ng-src="{{project.creativeImage}}" alt="{{project.title}} Creative"/>
+        <p ng-bind-html="project.creativeDescr"></p>
+    </div>
+
+    <div id="project-mobile-friendly">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>Mobile Friendly</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <img ng-src="{{project.mobileImage}}" alt="{{project.title}} Mobile Friendly"/>
+    </div>
+
+    <div id="project-server">
+        <div class="left">
+            <img ng-src="{{project.mockUpImage}}" alt="{{project.title}} Image"/>
+        </div>
+        <div class="right">
+            <div class="section-title">
+                <div class="title-wrapper">
+                    <h4>{{project.buildOnText}}</h4>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <img ng-src="{{project.buildOnImage}}" alt="{{project.title}} Server"/>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <div id="make-it-happen">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>MAKE IT HAPPEN</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <p>
+            You have an Idea, business or just want to update your current website.<br/>
+            Take the first step to your brand new digital identity!
+        </p>
+        <div class="button-wrapper">
+            <a href="/contacts" title="SEND YOUR INQUIRY" class="btn-style-fill">SEND YOUR INQUIRY</a>
+        </div>
+    </div>
+</div>

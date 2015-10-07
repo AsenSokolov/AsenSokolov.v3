@@ -1,0 +1,60 @@
+{
+  "title" : "RATES",
+  "descr" : "descr",
+  "keywords": "keywords",
+  "coverTitle" : "RATES",
+  "coverDescription" : "Price is what you pay.<br/>Value is what you get!",
+  "coverImage" : "assets/img/covers/rates-cover.jpg",
+  "plans":[{
+    "position": 1,
+    "title": "START UP WEBSITE EXAMPLES",
+    "descr": "Definition of “Start UP website” is a website consisting of up to five main sections with the total pages not to exceed 8.<br/>With no need of custom plug-ins or databases.",
+    "projects":[{
+      "title": "DIFOTO COMPANY",
+      "link": "http://difotocompany.com/",
+      "image": "assets/img/plans/start-up-difoto.jpg"
+    },{
+      "title": "BR&ND CREATIVE",
+      "link": "http://brandcreative.net/",
+      "image": "assets/img/plans/start-up-brandcreative.jpg"
+    },{
+      "title": "BEST FIT HOMES",
+      "link": "http://bestfithomes.com/",
+      "image": "assets/img/plans/start-up-bestfithomes.jpg"
+    }]
+  },{
+    "position": 2,
+    "title": "BUSINESS WEBSITE EXAMPLES",
+    "descr": "Definition of “Business website” is a website consisting of up to seven main sections with the total pages not to exceed 20.<br/>With no need of custom plug-ins or databases.",
+    "projects":[{
+      "title": "AGLIKA",
+      "link": "http://aglikausa.com/",
+      "image": "assets/img/plans/business-aglika.jpg"
+    },{
+      "title": "LATIN FORCE",
+      "link": "http://latinforce.bg/",
+      "image": "assets/img/plans/business-latinforce.jpg"
+    },{
+      "title": "M2",
+      "link": "http://m2-bg.com/",
+      "image": "assets/img/plans/business-m2.jpg"
+    }]
+  },{
+    "position": 3,
+    "title": "PREMIUM WEBSITE EXAMPLES",
+    "descr": "Definition of “Premium website” is a website consisting of up to ten main sections with the total pages not to exceed 40.<br/>With custom plug-ins and databases.",
+    "projects":[{
+      "title": "SOCIAL PLUS",
+      "link": "http://socialplus.bg/",
+      "image": "assets/img/plans/premium-socialplus.jpg"
+    },{
+      "title": "CIVOLUTION",
+      "link": "http://civolution.xecdev.com/",
+      "image": "assets/img/plans/premium-civolution.jpg"
+    },{
+      "title": "PUBLICIS MARC",
+      "link": "http://projects.xecdev.com/websites/PublicisMarc/",
+      "image": "assets/img/plans/premium-publicismarc.jpg"
+    }]
+  }]
+}
