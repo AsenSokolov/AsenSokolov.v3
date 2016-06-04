@@ -4,7 +4,7 @@
     <div id="who-i-am">
         <div class="profile-info">
             <div class="profile-photo">
-                <img src="assets/img/profile-image.jpg" alt="Asen Sokolov"/>
+                <img src="{{metaTags.getPageHost()}}assets/img/profile-image.jpg" alt="Asen Sokolov"/>
             </div>
             <h3>Asen Sokolov</h3>
             <h4>Web Developer - App Developer - Designer</h4>
@@ -73,116 +73,154 @@
         </div>
     </div>
 
-    <div id="latest-projects" ng-controller="ProjectsController as vm">
+    <div id="latest-projects">
 
         <div class="tabs">
-            <ul>
-                <li ng-class="{active: vm.isSelected(1)}">
-                    <a href ng-click="vm.selectTab(1)">LATEST PROJECTS</a>
+            <ul data-ng-init="selectedTab = 1">
+                <li data-ng-class="{active: selectedTab == 1}">
+                    <a href data-ng-click="selectedTab = 1">LATEST PROJECTS</a>
                 </li>
-                <li ng-class="{active: vm.isSelected(2)}">
-                    <a href ng-click="vm.selectTab(2)">CLIENTS</a>
+                <li data-ng-class="{active: selectedTab == 2}">
+                    <a href data-ng-click="selectedTab = 2">CLIENTS</a>
                 </li>
             </ul>
         </div>
 
-        <div id="projects" ng-show="vm.isSelected(1)">
+        <div id="projects" data-ng-show="selectedTab == 1">
             <div class="col-1">
-                <a href="{{vm.projects[0].link}}" alt="{{vm.projects[0].title}}" style="background: url('{{vm.projects[0].image}}') center center no-repeat;">{{vm.projects[0].title}}</a>
+                <a href="{{homeData.projects[0].link}}" alt="{{homeData.projects[0].title}}" style="background: url('{{metaTags.getPageHost()}}{{homeData.projects[0].image}}') center center no-repeat;">
+                    <div class="hover-layer">
+                        <i>+</i>
+                    </div>
+                </a>
             </div>
             <div class="col-2">
                 <div class="row-1">
-                    <a href="{{vm.projects[1].link}}" alt="{{vm.projects[1].title}}" style="background: url('{{vm.projects[1].image}}') center center no-repeat;">{{vm.projects[1].title}}e</a>
-                    <a href="{{vm.projects[2].link}}" alt="{{vm.projects[2].title}}" style="background: url('{{vm.projects[2].image}}') center center no-repeat;">{{vm.projects[2].title}}</a>
+                    <a href="{{homeData.projects[1].link}}" alt="{{homeData.projects[1].title}}" style="background: url('{{metaTags.getPageHost()}}{{homeData.projects[1].image}}') center center no-repeat;">
+                        <div class="hover-layer">
+                            <i>+</i>
+                        </div>
+                    </a>
+                    <a href="{{homeData.projects[2].link}}" alt="{{homeData.projects[2].title}}" style="background: url('{{metaTags.getPageHost()}}{{homeData.projects[2].image}}') center center no-repeat;">
+                        <div class="hover-layer">
+                            <i>+</i>
+                        </div>
+                    </a>
                 </div>
                 <div class="row-2">
-                    <a href="{{vm.projects[3].link}}" alt="{{vm.projects[2].title}}" style="background: url('{{vm.projects[3].image}}') center center no-repeat;">{{vm.projects[3].title}}</a>
+                    <a href="{{homeData.projects[3].link}}" alt="{{homeData.projects[2].title}}" style="background: url('{{metaTags.getPageHost()}}{{homeData.projects[3].image}}') center center no-repeat;">
+                        <div class="hover-layer">
+                            <i>+</i>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="clr"></div>
         </div>
 
-        <div id="clients" ng-show="vm.isSelected(2)">
+        <div id="clients" data-ng-show="selectedTab == 2">
             <ul>
                 <li>
-                    <img src="assets/img/clients/exxon-logo.png" alt="Exxon Mobil" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/exxon-logo.png" alt="Exxon Mobil" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/lg.png" alt="LG" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/lg.png" alt="LG" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/visa.png" alt="Visa" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/visa.png" alt="Visa" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/hot-wheels.png" alt="Hot Wheels" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/hot-wheels.png" alt="Hot Wheels" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/kpmg.png" alt="KMPG" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/kpmg.png" alt="KMPG" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/samsung.png" alt="Samsung" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/samsung.png" alt="Samsung" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/g2.png" alt="Gatorade" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/g2.png" alt="Gatorade" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/scotiabank.png" alt="Scotia Bank" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/scotiabank.png" alt="Scotia Bank" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/bc.png" alt="Brand Creative" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/bc.png" alt="Brand Creative" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/petro-canada.png" alt="Petro Canada" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/petro-canada.png" alt="Petro Canada" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/meridian.png" alt="Meridian" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/meridian.png" alt="Meridian" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/gibson.png" alt="Gibson" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/gibson.png" alt="Gibson" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/canadian-tire.png" alt="Canadian Tire" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/tm.png" alt="Taylor Made" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/tm.png" alt="Taylor Made" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/canadian-tire.png" alt="Canadian Tire" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/pc.png" alt="President Choice" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/pc.png" alt="President Choice" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/pixel-hunters.png" alt="Pixel Hunters" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/pixel-hunters.png" alt="Pixel Hunters" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/middle-east-talents-awards.png" alt="Middle East Talents Awards" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/middle-east-talents-awards.png" alt="Middle East Talents Awards" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/civolution.png" alt="Civolution" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/civolution.png" alt="Civolution" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/aglika.png" alt="Aglika" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/aglika.png" alt="Aglika" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/jk-logo.png" alt="Julia Kontogruni" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/jk-logo.png" alt="Julia Kontogruni" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/cappmea.png" alt="CAPP MEA" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/cappmea.png" alt="CAPP MEA" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/m2.png" alt="M2" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/m2.png" alt="M2" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/di-foto-logo.png" alt="DIFOTO COMPANY" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/di-foto-logo.png" alt="DIFOTO COMPANY" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/konutherm.png" alt="Konutherm" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/konutherm.png" alt="Konutherm" />
                 </li>
                 <li>
-                    <img src="assets/img/clients/infiniti.png" alt="Infiniti" />
+                    <img src="{{metaTags.getPageHost()}}assets/img/clients/infiniti.png" alt="Infiniti" />
                 </li>
             </ul>
             <div class="clr"></div>
         </div>
     </div>
+
+    <div id="latest-projects-mobile">
+        <div class="section-title">
+            <div class="title-wrapper">
+                <h4>Latest Projects</h4>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <a href="{{homeData.projects[0].link}}" alt="{{homeData.projects[0].title}}">
+            <img ng-src="{{metaTags.getPageHost()}}{{homeData.projects[0].imageMobile}}" alt="{{homeData.projects[0].title}}"/>
+        </a>
+        <a href="{{homeData.projects[1].link}}" alt="{{homeData.projects[1].title}}">
+            <img ng-src="{{metaTags.getPageHost()}}{{homeData.projects[1].imageMobile}}" alt="{{homeData.projects[1].title}}"/>
+        </a>
+        <a href="{{homeData.projects[2].link}}" alt="{{homeData.projects[2].title}}">
+            <img ng-src="{{metaTags.getPageHost()}}{{homeData.projects[2].imageMobile}}" alt="{{homeData.projects[2].title}}"/>
+        </a>
+        <a href="{{homeData.projects[3].link}}" alt="{{homeData.projects[3].title}}">
+            <img ng-src="{{metaTags.getPageHost()}}{{homeData.projects[3].imageMobile}}" alt="{{homeData.projects[3].title}}"/>
+        </a>
+    </div>
+
     <div id="workflow">
         <div class="section-title">
             <div class="title-wrapper">
@@ -190,75 +228,124 @@
                 <div class="title-underline"></div>
             </div>
         </div>
-        <div id="workflow-list">
-            <div class="steps">
-                <div class="step-1 step-left">
-                    <div class="step-info">
-                        <div class="icon workflow-step-1"></div>
-                        <div class="text">
-                            Tell me About<br/>
-                            Your Project
-                        </div>
-                    </div>
-                    <div class="color-plate"></div>
+
+        <div class="workflow-steps-desktop">
+            <div class="line-h">
+                <div class="line"></div>
+            </div>
+            <div class="step step-1 down">
+                <div class="text">
+                    Tell me About<br/>
+                    Your Project
                 </div>
-                <div class="step-2 step-right">
-                    <div class="step-info">
-                        <div class="icon workflow-step-2"></div>
-                        <div class="text">
-                            Concepts, Ideas<br/>
-                            and Flow
-                        </div>
-                    </div>
-                    <div class="color-plate"></div>
+                <div class="small-circle">1</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+            </div>
+            <div class="step step-2 up">
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+                <div class="small-circle">2</div>
+                <div class="text">
+                    Concepts, Ideas<br/>
+                    and Flow
                 </div>
             </div>
-            <div class="steps">
-                <div class="step-3 step-left">
-                    <div class="step-info">
-                        <div class="icon workflow-step-3"></div>
-                        <div class="text">
-                            Delivery of<br/>
-                            Content
-                        </div>
-                    </div>
-                    <div class="color-plate"></div>
+            <div class="step step-3 down">
+                <div class="text">
+                    Delivery of<br/>
+                    Content
                 </div>
-                <div class="step-4 step-right">
-                    <div class="step-info">
-                        <div class="icon workflow-step-4"></div>
-                        <div class="text">
-                            Design
-                        </div>
-                    </div>
-                    <div class="color-plate"></div>
+                <div class="small-circle">3</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+            </div>
+            <div class="step step-4 up">
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+                <div class="small-circle">4</div>
+                <div class="text">
+                    Design and<br/>
+                    Revisions
                 </div>
             </div>
-            <div class="steps">
-                <div class="step-5 step-left">
-                    <div class="step-info">
-                        <div class="icon workflow-step-5"></div>
-                        <div class="text">
-                            Development,<br/>
-                            Test and QA
-                        </div>
-                    </div>
-                    <div class="color-plate"></div>
+            <div class="step step-5 down">
+                <div class="text">
+                    Development,<br/>
+                    Test and QA
                 </div>
-                <div class="step-6 step-right">
-                    <div class="step-info">
-                        <div class="icon workflow-step-6"></div>
-                        <div class="text">
-                            Project Goes<br/>
-                            Live
-                        </div>
-                    </div>
-                    <div class="color-plate"></div>
+                <div class="small-circle">5</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+            </div>
+            <div class="step step-6 up">
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+                <div class="small-circle">6</div>
+                <div class="text">
+                    Project Goes<br/>
+                    Live
                 </div>
             </div>
         </div>
 
+        <div class="workflow-steps-mobile">
+            <div class="step step-1">
+                <div class="text">
+                    Tell me About Your Project
+                </div>
+                <div class="small-circle">1</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+            </div>
+            <div class="step step-2 up">
+                <div class="text">
+                    Concepts, Ideas and Flow
+                </div>
+                <div class="small-circle">2</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+            </div>
+            <div class="step step-3 down">
+                <div class="text">
+                    Delivery of Content
+                </div>
+                <div class="small-circle">3</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+            </div>
+            <div class="step step-4 up">
+                <div class="text">
+                    Design and Revisions
+                </div>
+                <div class="small-circle">4</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+            </div>
+            <div class="step step-5 down">
+                <div class="text">
+                    Development, Test and QA
+                </div>
+                <div class="small-circle">5</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+                <div class="line-v"></div>
+            </div>
+            <div class="step step-6 up">
+                <div class="text">
+                    Project Goes Live
+                </div>
+                <div class="small-circle">6</div>
+                <div class="line-v"></div>
+                <div class="big-circle"></div>
+            </div>
+        </div>
     </div>
+
     <div id="make-it-happen">
         <div class="section-title">
             <div class="title-wrapper">

@@ -1,9 +1,19 @@
-<div id="Loading">
+<div id="Loading" data-ng-show="pageLoading.getLoadingStatus()">
     <div class="loading-wrapper">
-        <img src="assets/img/as-logo.png" alt="AsenSokolov.com"/>
-        <p>Loading</p>
-        <div class="progress-bar">
-            <div class="line"></div>
+        <img src="<?php echo $full_path; ?>assets/img/as-logo.png" alt="AsenSokolov.com"/>
+        <div class="cssload-wrap">
+            <div class="cssload-container">
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+                <span class="cssload-dots"></span>
+            </div>
         </div>
     </div>
 </div>

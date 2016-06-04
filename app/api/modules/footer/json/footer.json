@@ -1,0 +1,51 @@
+{
+  "news" : [{
+    "title"  : "Upcoming Projects 2016",
+    "link" : "news/upcoming-projects-2016"
+  },{
+    "title"  : "Welcome to my new home!",
+    "link" : "news/as-v3"
+  },{
+    "title"  : "Cambodia & Thailand",
+    "link" : "news/cambodia-thailand-2016"
+  },{
+    "title"  : "Bloomberg Square Mile Run 2016",
+    "link" : "news/bloomberg-square-mile-2016"
+  },{
+    "title"  : "Dubai Marathon 2016",
+    "link" : "news/dubai-marathon-2016"
+  }],
+  
+  "testimonials" : [{
+    "avatar"  : "assets/img/testimonials/mohammed.jpg",
+    "name" : "Mohammed El Hijazi",
+    "qualification" : "Managing Director",
+    "company"  : "BR&ND CREATIVE",
+    "description"  : "Since the initial meeting I understood that Asen have the ability to create the website I'v been dreaming of, his ability to translate my comments into technical language is impressive and some of the features he implemented I didn't even know existed! The result: a responsive website with different animation and tools working across all platforms."
+  },{
+    "avatar"  : "assets/img/testimonials/ilko.jpg",
+    "name" : "Ilko Sokolov",
+    "qualification" : "CEO",
+    "company"  : "XEC International ltd.",
+    "description"  : "Asen is a dedicated, ambitious and result driven leader. Careful co-worker. Asen is ready to deal with difficult situations and solve the problems on time. Asen is an innovative, customer focused, achievement oriented and wise team player. Highly organized and very very fast. Asen is probably one of the smartest, cleanest and fastest web developers I’ve ever worked with."
+  },{
+    "avatar"  : "assets/img/testimonials/ani.jpg",
+    "name" : "Ani Atanasova",
+    "qualification" : "CEO",
+    "company"  : "Pixelhunters",
+    "description"  : "We have hired Asen to develop a web site for one of our subsidiary companies. He understands very fast requirements, delivers fast results and is patient to do the requested changes. Working with him is a pleasure as all goes smoothly and efficiently. He is professional and positive person. Strongly recommend him to anyone who needs a website development."
+  },{
+    "avatar"  : "assets/img/testimonials/iordan.jpg",
+    "name" : "Iordan Iordanov",
+    "qualification" : "Managing Director",
+    "company"  : "DiFoto Company",
+    "description"  : "Asen delivered my new website ahead of time and with a lot of attention to detail. Asen created a fresh, interactive and very up to date product. I have received many compliments on the new design of my website. Since the new website was launched my business revenues has more than doubled."
+  },{
+    "avatar"  : "assets/img/testimonials/vasil.jpg",
+    "name" : "Vasil Trifonov",
+    "qualification" : "Technical Lead",
+    "company"  : "Telerik",
+    "description"  : "I've worked with Asen on some projects. During those projects Asen proved to be very dedicated and helpful. He is a great team player, always willing to help. I'll be always happy to work with him."
+  }]
+
+}

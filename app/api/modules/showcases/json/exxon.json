@@ -1,0 +1,39 @@
+{
+  "title" : "Exxon Flash Game by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Exxon Flash Game, Exxon Flash Game Campaign, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/exxon/fb-exxon-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/exxon/exxon-cover.jpg",
+
+  "service": "Flash Game",
+  "projectImage": "assets/img/showcases/exxon/exxon-project-image.jpg",
+
+  "generalInfo": "ExxonMobil, the largest publicly traded international oil and gas company, uses technology and innovation to help meet the world’s growing energy needs. Exxon hold an industry-leading inventory of resources and are one of the world’s largest integrated refiners, marketers of petroleum products and chemical manufacturers.<br/><br/>Over the last 125 years ExxonMobil has evolved from a regional marketer of kerosene to the largest publicly traded energy company in the world.",
+
+  "typographyMain": "Helvetica Neue Regular",
+  "typographySecondary": "Helvetica Neue Bold",
+  "typographyNative": "Arial",
+  "typographyDescr": "Helvetica is a widely used sans-serif typeface. Over the years a wide range of variants have been released in different weights, widths and sizes, as well as matching designs for a range of non-Latin alphabets.",
+  "typographyImage": "assets/img/showcases/exxon/exxon-typography.png",
+
+  "creativeImage": "assets/img/showcases/exxon/exxon-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop an engaging game which offers users to learn curious facts<br/><br/><strong>PROJECT IMPLEMENTATION:</strong> An addictive, easy to play game called Valve Solve was created and developed. It challenged users observations skills and made them solve tasks with different levels of difficulty. To promote the game we created rich-media banners that were spread over different digital channels.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-STUDIO",
+
+  "mobileImage": "assets/img/showcases/exxon/exxon-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/exxon/exxon-image-mockup.png",
+  "buildOnText": "Built with <br/>Adobe Flash",
+  "buildOnImage": "assets/img/showcases/exxon/exxon-platform.png",
+
+  "prevProjectTitle": "Petro Canada Showcase",
+  "prevProjectUrl": "showcases/petro-canada",
+  "nextProjectTitle": "Infiniti Showcase",
+  "nextProjectUrl": "showcases/infiniti"
+}

@@ -1,0 +1,39 @@
+{
+  "title" : "Meadow In The Mountains Event Website by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Meadow In The Mountains Website, Meadow In The Mountains Company Website, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/mm/fb-mm-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/mm/mm-cover.jpg",
+
+  "service": "Event Website",
+  "projectImage": "assets/img/showcases/mm/mm-project-image.jpg",
+
+  "generalInfo": "Meadows In The Mountains is like no other festival in the world. Nestled in the stunning heart of the Rhodopian Mountains near Bulgaria’s Greek border, set in an otherworldly and jaw-dropping setting that is unmatched anywhere on the planet.<br/><br/>A world away from other soul less festivals Meadows is a festival who’s uniquely intimate ethos is prominently made by it’s stunning setting and friendly people that attend not just the exquisite line up it presents.<br/><br/>A world away from other soul less festivals Meadows is a festival who’s uniquely intimate ethos is prominently made by it’s stunning setting and friendly people that attend not just the exquisite line up it presents.",
+
+  "typographyMain": "Moon Flower Bold",
+  "typographySecondary": "Helvetica Light",
+  "typographyNative": "Arial",
+  "typographyDescr": "Moon Flower by Denise Bentulan is a free typeface very useful for a art projects. Pretty and easy to read.",
+  "typographyImage": "assets/img/showcases/mm/mm-typography.png",
+
+  "creativeImage": "assets/img/showcases/mm/mm-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop a music festival event website.<br/><br/><strong>PROJECT  IMPLEMENTATION:</strong> The design of the website was made with custom hand drawings to recreate the atmosphere of the mountain area where the music festival took place. We combined the drawings using nice and smooth parallax animations to make the website alive and catchy. We also implemented custom booking integration and google map integration so that the visitors can find all available accommodations near the festival.<br/><br/>The website is easily accessible through all mobile devices allowing users to get the information they need for the festival anytime anywhere.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-Studio",
+
+  "mobileImage": "assets/img/showcases/mm/mm-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/mm/mm-image-mockup.png",
+  "buildOnText": "Built on",
+  "buildOnImage": "assets/img/showcases/mm/mm-platform.png",
+
+  "prevProjectTitle": "Premiere Talent Showcase",
+  "prevProjectUrl": "showcases/premiere-talent",
+  "nextProjectTitle": "Santa Yourself Showcase",
+  "nextProjectUrl": "showcases/santa-yourself"
+}

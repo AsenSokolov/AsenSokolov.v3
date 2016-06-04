@@ -1,0 +1,56 @@
+<header data-ng-controller="HeaderController">
+    <div id="Nav-wrapper">
+
+        <div id="Logo">
+            <a href="/" data-hash="/" title="Asen Sokolov">
+                <img src="{{metaTags.getPageHost()}}assets/img/as-logo.png" alt="AsenSokolov.com"/>
+            </a>
+        </div>
+
+        <div id="Nav">
+
+            <div class="nav-btn">
+                <a href="javascript:void(0);" data-ng-click="showNav = !showNav" data-ng-class="{'close-nav' : showNav}">
+                    <i class="icons-menu-plus"></i>
+                </a>
+            </div>
+
+            <ul ng-show="showNav">
+                <li class="close-mobile-nav">
+                    <a href="javascript:void(0);" data-ng-click="showNav = false">
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" data-hash="/" data-ng-click="showNav = false">Home</a>
+                </li>
+                <li>
+                    <a href="/about-me" data-hash="/about-me" data-ng-click="showNav = false">About Me</a>
+                </li>
+                <li>
+                    <a href="/showcases" data-hash="/showcases" data-ng-click="showNav = false">Showcases</a>
+                </li>
+                <li>
+                    <a href="/rates" data-hash="/rates" data-ng-click="showNav = false">Rates</a>
+                </li>
+                <li>
+                    <a href="/news" data-hash="/news" data-ng-click="showNav = false">News</a>
+                </li>
+                <li>
+                    <a href="/contacts" data-hash="/contacts" data-ng-click="showNav = false">Contacts</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <div id="Section-cover" style="background-image: url('{{metaTags.getPageHost()}}{{coverParams.getCoverImage()}}');">
+        <div class="section-title">
+            <h1>{{coverParams.getCoverTitle()}}</h1>
+            <h2 data-ng-bind-html="coverParams.getCoverSubTitle()"></h2>
+        </div>
+        <div class="icons-cover-scroll-down-blue scroll-down-arrow"></div>
+    </div>
+
+</header>

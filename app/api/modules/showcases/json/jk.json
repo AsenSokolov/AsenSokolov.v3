@@ -1,0 +1,39 @@
+{
+  "title" : "Julia Kontogruni Company Website by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Julia Kontogruni Website, Julia Kontogruni Company Website, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/jk/fb-jk-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/jk/jk-cover.jpg",
+
+  "service": "Company Website",
+  "projectImage": "assets/img/showcases/jk/jk-project-image.jpg",
+
+  "generalInfo": "Established Set up in 2002, Julia Kontogruni Luxury design house offers exquisite cut and fit, quality workmanship and great emphasis on detail. JK unique wedding and official toilettes are handcrafted from high quality natural materials.<br/><br/> Julia Kontogruni brand will dress you in high style. Special fully boned corsets, elaborately embellished with hand-beaded Swarovski crystals and pearls, give your body a perfect fit. The shine of Austrian crystals turns gowns into jewels.",
+
+  "typographyMain": "Trajan Pro Regular",
+  "typographySecondary": "Helvetica Neue",
+  "typographyNative": "Arial",
+  "typographyDescr": "Trajan is an old style serif typeface designed in 1989 by Carol Twombly for Adobe. The design is based on the letterforms of capitalis monumentalis or Roman square capitals, as used for the inscription at the base of Trajan's Column from which the typeface takes its name.",
+  "typographyImage": "assets/img/showcases/jk/jk-typography.png",
+
+  "creativeImage": "assets/img/showcases/jk/jk-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and developer corporate ID and website.<br/><br/><strong>PROJECT IMPLEMENTATION:</strong> The website was created in 2010 and even now the product looks very up to date with nice, clean and user friendly design. In addition to the website we created a mobile version so all users can access the website through different devices.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-Studio",
+
+  "mobileImage": "assets/img/showcases/jk/jk-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/jk/jk-image-mockup.png",
+  "buildOnText": "Built with <br/>Adobe Flash",
+  "buildOnImage": "assets/img/showcases/jk/jk-platform.png",
+
+  "prevProjectTitle": "Andy Pavlov Showcase",
+  "prevProjectUrl": "showcases/andy-pavlov",
+  "nextProjectTitle": "M2 Showcase",
+  "nextProjectUrl": "showcases/m2"
+}

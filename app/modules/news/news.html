@@ -1,0 +1,34 @@
+<div id="news">
+    <h2>Useful articles how to become a better version of yourself.</h2>
+    <div id="news-categories">
+        <div class="as-custom-select" ng-click="openDropDown($event);" ng-class="{'drop-down-open' : ddOpen}">{{selectedCategory}}</div>
+        <ul ng-show="ddOpen">
+            <li ng-repeat="option in newsCategories" ng-click="selectCategory(option)">
+                {{option}}
+            </li>
+        </ul>
+    </div>
+
+    <div id="articles">
+        <div class="wrapper">
+            <!--<a href="{{article.link}}" class="article" title="{{article.title}}" ng-repeat="article in news | filter: applyFilterCategory | limitTo: paginationLimit()">-->
+            <a href="{{article.link}}" class="article" title="{{article.title}}" ng-repeat="article in filtered = (news | filter:applyFilterCategory) | limitTo: paginationLimit()">
+                <div class="article-img">
+                    <div class="hover-layer">
+                        <i>+</i>
+                    </div>
+                    <img ng-src="{{metaTags.getPageHost()}}{{article.newsImage}}" alt="{{article.title}}"/>
+                </div>
+
+                <h5>{{article.title}}</h5>
+                <h6>{{article.category}}</h6>
+            </a>
+
+        </div>
+        <div class="clr"></div>
+        <div class="btn-load-more-cont">
+            <a href="javascript:void(0);" ng-show="hasMoreItemsToShow()" ng-click="showMoreItems()" class="btn-style-fill">LOAD MORE</a>
+        </div>
+    </div>
+
+</div>

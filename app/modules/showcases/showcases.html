@@ -9,79 +9,79 @@
 
         <ul>
             <li>
-                <img src="assets/img/clients/exxon-logo.png" alt="Exxon Mobil"/>
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/exxon-logo.png" alt="Exxon Mobil"/>
             </li>
             <li>
-                <img src="assets/img/clients/lg.png" alt="LG"/>
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/lg.png" alt="LG"/>
             </li>
             <li>
-                <img src="assets/img/clients/visa.png" alt="Visa"/>
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/visa.png" alt="Visa"/>
             </li>
             <li>
-                <img src="assets/img/clients/hot-wheels.png" alt="Hot Wheels"/>
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/hot-wheels.png" alt="Hot Wheels"/>
             </li>
             <li>
-                <img src="assets/img/clients/kpmg.png" alt="KMPG" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/kpmg.png" alt="KMPG" />
             </li>
             <li>
-                <img src="assets/img/clients/samsung.png" alt="Samsung" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/samsung.png" alt="Samsung" />
             </li>
             <li>
-                <img src="assets/img/clients/g2.png" alt="Gatorade" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/g2.png" alt="Gatorade" />
             </li>
             <li>
-                <img src="assets/img/clients/scotiabank.png" alt="Scotia Bank" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/scotiabank.png" alt="Scotia Bank" />
             </li>
             <li>
-                <img src="assets/img/clients/bc.png" alt="Brand Creative" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/bc.png" alt="Brand Creative" />
             </li>
             <li>
-                <img src="assets/img/clients/petro-canada.png" alt="Petro Canada" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/petro-canada.png" alt="Petro Canada" />
             </li>
             <li>
-                <img src="assets/img/clients/meridian.png" alt="Meridian" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/meridian.png" alt="Meridian" />
             </li>
             <li>
-                <img src="assets/img/clients/gibson.png" alt="Gibson" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/gibson.png" alt="Gibson" />
             </li>
             <li>
-                <img src="assets/img/clients/canadian-tire.png" alt="Canadian Tire" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/canadian-tire.png" alt="Canadian Tire" />
             </li>
             <li>
-                <img src="assets/img/clients/tm.png" alt="Taylor Made" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/tm.png" alt="Taylor Made" />
             </li>
             <li>
-                <img src="assets/img/clients/pc.png" alt="President Choice" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/pc.png" alt="President Choice" />
             </li>
             <li>
-                <img src="assets/img/clients/pixel-hunters.png" alt="Pixel Hunters" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/pixel-hunters.png" alt="Pixel Hunters" />
             </li>
             <li>
-                <img src="assets/img/clients/middle-east-talents-awards.png" alt="Middle East Talents Awards" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/middle-east-talents-awards.png" alt="Middle East Talents Awards" />
             </li>
             <li>
-                <img src="assets/img/clients/civolution.png" alt="Civolution" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/civolution.png" alt="Civolution" />
             </li>
             <li>
-                <img src="assets/img/clients/aglika.png" alt="Aglika" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/aglika.png" alt="Aglika" />
             </li>
             <li>
-                <img src="assets/img/clients/jk-logo.png" alt="Julia Kontogruni" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/jk-logo.png" alt="Julia Kontogruni" />
             </li>
             <li>
-                <img src="assets/img/clients/cappmea.png" alt="CAPP MEA" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/cappmea.png" alt="CAPP MEA" />
             </li>
             <li>
-                <img src="assets/img/clients/m2.png" alt="M2" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/m2.png" alt="M2" />
             </li>
             <li>
-                <img src="assets/img/clients/di-foto-logo.png" alt="DIFOTO COMPANY" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/di-foto-logo.png" alt="DIFOTO COMPANY" />
             </li>
             <li>
-                <img src="assets/img/clients/konutherm.png" alt="Konutherm" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/konutherm.png" alt="Konutherm" />
             </li>
             <li>
-                <img src="assets/img/clients/infiniti.png" alt="Infiniti" />
+                <img src="{{metaTags.getPageHost()}}assets/img/clients/infiniti.png" alt="Infiniti" />
             </li>
         </ul>
         <div class="clr"></div>
@@ -89,11 +89,11 @@
 
     <div id="projects">
         <div class="wrapper">
-            <div id="project-{{$index}}" class="project"  ng-repeat="project in projects | limitTo: paginationLimit()" ng-init="$last ? setShowcasesAnimations() : null" style="background-image:url('{{project.bgMainImage}}'); background-repeat: {{project.bgMainRepeat}}; background-position: {{project.bgMainPosition}}; background-size: {{project.bgMainSize}}; background-color: {{project.bgMainColor}};">
+            <div id="project-{{$index}}" class="project"  ng-repeat="project in projects | orderBy: 'position' | limitTo: paginationLimit()" ng-init="$last ? setShowcasesAnimations() : null" style="background-image:url('{{project.bgMainImage}}'); background-repeat: {{project.bgMainRepeat}}; background-position: {{project.bgMainPosition}}; background-size: {{project.bgMainSize}}; background-color: {{project.bgMainColor}};">
                 <div class="wrapper">
-                    <div class="left" style="background-image:url('{{project.bgLeftImage}}'); background-repeat: {{project.bgLeftRepeat}}; background-position: {{project.bgLeftPosition}}; background-color: {{project.bgLeftColor}};">
+                    <div class="left" style="background-image:url('{{metaTags.getPageHost()}}{{project.bgLeftImage}}'); background-repeat: {{project.bgLeftRepeat}}; background-position: {{project.bgLeftPosition}}; background-color: {{project.bgLeftColor}};">
                         <div class="half-wrapper">
-                            <img ng-src="{{project.projectLogo}}"/>
+                            <img ng-src="{{metaTags.getPageHost()}}{{project.projectLogo}}"/>
                             <h6>{{project.service}}</h6>
                             <a href="{{project.link}}" style="background:{{project.bgLinkColor}};" class="hvr-buzz-out">
                                 <i class="icons-btn-project-arrow"></i>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="right" style="background-image:url('{{project.bgRightImage}}'); background-repeat: {{project.bgRightRepeat}}; background-position: {{project.bgRightPosition}}; background-color: {{project.bgRightColor}};">
                         <div class="half-wrapper">
-                            <img ng-src="{{project.projectImage}}" alt="{{project.title}}"/>
+                            <img ng-src="{{metaTags.getPageHost()}}{{project.projectImage}}" alt="{{project.title}}"/>
                         </div>
                     </div>
                 </div>

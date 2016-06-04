@@ -1,0 +1,39 @@
+{
+  "title" : "DIFOTO Company Website by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "DIFOTO Website, DIFOTO Company Website, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/difoto/fb-difoto-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/difoto/difoto-cover.jpg",
+
+  "service": "Company Website",
+  "projectImage": "assets/img/showcases/difoto/difoto-project-image.jpg",
+
+  "generalInfo": "DIFOTO is a UAE based group of photographers specializing in sporting events, advertising and commercial photography and videography, family and kids, underwater shoots and weddings.<br/><br/>At DIFOTO believes that photography is more than just images but rather a way to preserve history. They aim to capture the best moments in life and deliver smiles through quality and professionalism.",
+
+  "typographyMain": "Open Sans Regular",
+  "typographySecondary": "Open Sans Semibold",
+  "typographyNative": "Arial",
+  "typographyDescr": "Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp. Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.",
+  "typographyImage": "assets/img/showcases/difoto/difoto-typography.png",
+
+  "creativeImage": "assets/img/showcases/difoto/difoto-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop a new mobile friendly photography website.<br/><br/><strong>PROJECT  IMPLEMENTATION:</strong> In order to create a fresh, interactive and modern website I used top trend techniques: parallax scrolling, large sized images, huge titles and eye catching fonts.<br/><br/>A feedback from my client Iordan Iordanov (Managing Director of DIFOTO) says it all:<br/><br/>Asen delivered my new website ahead of time and with a lot of attention to detail. Asen created a fresh, interactive and very up to date product. I have received many compliments on the new design of my website. Since the new website was launched my business revenues has more than doubled.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> Asen Sokolov",
+
+  "mobileImage": "assets/img/showcases/difoto/difoto-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/difoto/difoto-image-mockup.png",
+  "buildOnText": "Built with most popular<br/>open-source CMS",
+  "buildOnImage": "assets/img/showcases/difoto/difoto-platform.png",
+
+  "prevProjectTitle": "Aglika Showcase",
+  "prevProjectUrl": "showcases/aglika",
+  "nextProjectTitle": "Andy Pavlov Showcase",
+  "nextProjectUrl": "showcases/andy-pavlov"
+}

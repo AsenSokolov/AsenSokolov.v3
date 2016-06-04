@@ -1,0 +1,39 @@
+{
+  "title" : "Civolution Anniversary Campaign by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Civolution Website, Civolution Anniversary Website, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/civolution/fb-civolution-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/civolution/civolution-cover.jpg",
+
+  "service": "Anniversary Campaign",
+  "projectImage": "assets/img/showcases/civolution/civolution-project-image.jpg",
+
+  "generalInfo": "Civolution Company, is a leading provider of forensic watermarking technology and solutions for protecting media content against illicit redistribution.<br/><br/>Civolution offer an extensive portfolio of industry-leading digital watermarking tools for Pre-Release, Digital Cinema, B2B and B2C distribution.<br/><br/>The development and widespread adoption of broadband internet, new TV distribution platforms, and enabled devices has made it easier than ever for content owners to reach their audiences, and for consumers to access and consume multimedia content whenever and wherever they choose.",
+
+  "typographyMain": "Helvetica Neue Light",
+  "typographySecondary": "Helvetica Neue Bold",
+  "typographyNative": "Arial",
+  "typographyDescr": "Helvetica is a widely used sans-serif typeface.  Over the years a wide range of variants have been  released in different weights, widths and sizes, as  well as matching designs for a range of non-Latin  alphabets.",
+  "typographyImage": "assets/img/showcases/civolution/civolution-typography.png",
+
+  "creativeImage": "assets/img/showcases/civolution/civolutione-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop company promo website to celebrate Civolution’s 5th anniversary.<br/><br/><strong>PROJECT IMPLEMENTATION:</strong> Civolution wanted to celebrate their 5th anniversary on 21 November online by connecting all of their offices in NY, LA, London, Paris and Holland (Eindhoven).<br/><br/>We managed to engage all company employees through the website and our virtual trainer Suze. We challenged them in an online team multilevel competition between their offices. In the different stages of the website the Civolution employees had to break codes, play an online game, answer bonus questions, produce original team movies and upload them on the website.<br/><br/>The participants had their activities and progress displayed on a dynamic dashboard. All results and awards were announced on the event page along with the CEO’s greeting speech at the live event. The website engaged 95% of Civolution`s employees and they spent more than 35 hours on the website, breaking 206 codes and uploading 12 team movies.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-STUDIO",
+
+  "mobileImage": "assets/img/showcases/civolution/civolution-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/civolution/civolution-image-mockup.png",
+  "buildOnText": "Built on",
+  "buildOnImage": "assets/img/showcases/civolution/civolution-platform.png",
+
+  "prevProjectTitle": "Social Plus Showcase",
+  "prevProjectUrl": "showcases/social-plus",
+  "nextProjectTitle": "LG Showcase",
+  "nextProjectUrl": "showcases/lg"
+}

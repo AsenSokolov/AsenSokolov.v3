@@ -6,9 +6,9 @@
         </div>
     </div>
 
-    <div id="plans-wrapper" ng-controller="PlanController as vm">
+    <div id="plans-wrapper" >
         <div id="plans">
-            <div class="plan hvr-float" ng-click="vm.selectPlan(1)" ng-class="{active: vm.isSelected(1)}">
+            <div class="plan hvr-float" ng-click="plansFac.selectPlan(1)" ng-class="{active: plansFac.isSelected(1)}">
                 <div class="plan-head">
                     <div class="plan-title">
                         <div class="title-wrapper">
@@ -17,8 +17,8 @@
                         </div>
                     </div>
                     <div class="start-from">Start From</div>
-                    <div class="prace-aed">8 500 AED</div>
-                    <div class="prace-eu">2200 EURO</div>
+                    <div class="prace-aed">9 000 AED</div>
+                    <div class="prace-eu">2300 EURO</div>
                 </div>
                 <div class="plan-descr">
                     <div>Up to 8 Pages</div>
@@ -38,7 +38,7 @@
                 <div class="arrow-active"></div>
             </div>
 
-            <div class="plan popular-choise hvr-float" ng-click="vm.selectPlan(2)" ng-class="{active: vm.isSelected(2)}">
+            <div class="plan popular-choise hvr-float" ng-click="plansFac.selectPlan(2)" ng-class="{active: plansFac.isSelected(2)}">
                 <div class="popular-choise-text">POPULAR CHOICE </div>
                 <div class="plan-head">
                     <div class="plan-title">
@@ -48,8 +48,8 @@
                         </div>
                     </div>
                     <div class="start-from">Start From</div>
-                    <div class="prace-aed">17 000 AED</div>
-                    <div class="prace-eu">4200 EURO</div>
+                    <div class="prace-aed">18 000 AED</div>
+                    <div class="prace-eu">4500 EURO</div>
                 </div>
                 <div class="plan-descr">
                     <div>Up to 8 Pages</div>
@@ -69,7 +69,7 @@
                 <div class="arrow-active"></div>
             </div>
 
-            <div class="plan hvr-float" ng-click="vm.selectPlan(3)" ng-class="{active: vm.isSelected(3)}">
+            <div class="plan hvr-float" ng-click="plansFac.selectPlan(3)" ng-class="{active: plansFac.isSelected(3)}">
                 <div class="plan-head">
                     <div class="plan-title">
                         <div class="title-wrapper">
@@ -78,8 +78,8 @@
                         </div>
                     </div>
                     <div class="start-from">Start From</div>
-                    <div class="prace-aed">35 000 AED</div>
-                    <div class="prace-eu">8500 EURO</div>
+                    <div class="prace-aed">36 000 AED</div>
+                    <div class="prace-eu">9000 EURO</div>
                 </div>
                 <div class="plan-descr">
                     <div>Up to 8 Pages</div>
@@ -101,7 +101,7 @@
         </div>
 
         <div id="plans-examples">
-            <div class="plan-examples" ng-show="vm.isSelected({{$index + 1}})" ng-repeat="plan in vm.plans">
+            <div class="plan-examples" ng-show="plansFac.isSelected({{$index + 1}})" ng-repeat="plan in ratesData.plans">
                 <div class="section-title">
                     <div class="title-wrapper">
                         <h4>{{plan.title}}</h4>
@@ -119,7 +119,7 @@
                                 <p>{{project.title}}</p>
                             </div>
                         </div>
-                        <img ng-src="{{project.image}}" alt="{{project.title}}">
+                        <img ng-src="{{metaTags.getPageHost()}}{{project.image}}" alt="{{project.title}}">
                     </a>
                 </div>
             </div>

@@ -1,0 +1,39 @@
+{
+  "title" : "LG Facebook Application by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "LG Facebook Application, LG Facebook Application Campaign, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/lg/fb-lg-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/lg/lg-cover.jpg",
+
+  "service": "Facebook Application",
+  "projectImage": "assets/img/showcases/lg/lg-project-image.jpg",
+
+  "generalInfo": "LG's innovative technologies, unique products, and cutting-edge designs are an investment in the future.<br/><br/>With 2014 global sales of USD 55.91 billion (KRW 59.04 trillion), LG comprises four business units - Home Entertainment, Mobile Communications, Home Appliance & Air Solution, and Vehicle Components - and is one of the world's leading producers of flat panel TVs, mobile devices, air conditioners, washing machines and refrigerators. LG Electronics is a 2014 ENERGY STAR Partner of the Year.",
+
+  "typographyMain": "Arial",
+  "typographySecondary": "Helvetica Neue Roman",
+  "typographyNative": "Arial",
+  "typographyDescr": "Arial, sometimes marketed or displayed in software as Arial MT, is a sans-serif typeface and set of computer fonts. The typeface was designed in 1982 by a 10-person team, led by Robin Nicholas and Patricia Saunders, for Monotype Typography. It was created to be metrically identical to the popular typeface Helvetica, with all character widths identical, so that a document designed in Helvetica could be displayed and printed correctly without having to pay for a Helvetica license.",
+  "typographyImage": "assets/img/showcases/lg/lg-typography.png",
+
+  "creativeImage": "assets/img/showcases/lg/lg-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop a Facebook and mobile application.<br/><br/><strong>PROJECT IMPLEMENTATION:</strong> This project was divided to three phases:<br/>Phase One: promoting and engaging as many users as possible to submit their recipes on the website in order to win a big prize.<br/>Phase Two: playoffs - the best recipes were involved in a direct fight to reach the finals.<br/>Phase Three: announcing the winner.<br/><br/>After a 1 month campaign LG increased their fan base with a lot of users, one lucky guy won a brand new kitchen, and all this was possible thanks to our awesome engaging Facebook application.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-STUDIO",
+
+  "mobileImage": "assets/img/showcases/lg/lg-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/lg/lg-image-mockup.png",
+  "buildOnText": "Built on",
+  "buildOnImage": "assets/img/showcases/lg/lg-platform.png",
+
+  "prevProjectTitle": "Civolution Showcase",
+  "prevProjectUrl": "showcases/civolution",
+  "nextProjectTitle": "Petro Canada Showcase",
+  "nextProjectUrl": "showcases/petro-canada"
+}

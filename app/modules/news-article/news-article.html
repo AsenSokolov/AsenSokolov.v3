@@ -1,0 +1,45 @@
+<div id="news-article">
+    <div id="article-info" ng-bind-html="article.articleInfo"></div>
+    <div id="article-social-icons">
+
+        <a href="#"
+           socialshare
+           socialshare-provider="facebook"
+           socialshare-caption="{{article.title}}"
+           socialshare-text="{{article.title}}"
+           socialshare-description="{{article.descr}}"
+           socialshare-media="{{meta.getPageHost()}}{{article.fbImage}}"
+           socialshare-url="{{meta.getPageHost()}}{{article.articleURL}}"
+           class="fb-share">
+            <i class="icons-facebook-big"></i>
+            <span>Facebook</span>
+        </a>
+
+        <a href="#"
+           socialshare
+           socialshare-provider="twitter"
+           socialshare-caption="{{article.title}}"
+           socialshare-text="{{article.title}}"
+           socialshare-description="{{article.descr}}"
+           socialshare-media="{{meta.getPageHost()}}{{article.twImage}}"
+           socialshare-url="{{meta.getPageHost()}}{{article.articleURL}}"
+           class="tw-share">
+            <i class="icons-twitter-big"></i>
+            <span>Twitter</span>
+        </a>
+
+        <a href="#"
+           socialshare
+           socialshare-provider="google+"
+           socialshare-caption="{{article.title}}"
+           socialshare-text="{{article.title}}"
+           socialshare-description="{{article.descr}}"
+           socialshare-media="{{meta.getPageHost()}}{{article.fbImage}}"
+           socialshare-url="{{meta.getPageHost()}}{{article.articleURL}}"
+           class="gp-share">
+            <i class="icons-google-plus-big"></i>
+            <span>Google+</span>
+        </a>
+
+    </div>
+</div>

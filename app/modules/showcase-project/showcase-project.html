@@ -5,7 +5,7 @@
             <i class="circle-2"></i>
             <i class="circle-3"></i>
         </div>
-        <img ng-src="{{project.projectImage}}" alt="{{project.title}}"/>
+        <img ng-src="{{metaTags.getPageHost()}}{{project.projectImage}}" alt="{{project.title}}"/>
     </div>
     <div class="clr"></div>
 
@@ -40,7 +40,7 @@
                 <p ng-bind-html="project.typographyDescr"></p>
             </div>
             <div class="right">
-                <img ng-src="{{project.typographyImage}}" alt="{{project.title}} Typography" class="img-typography"/>
+                <img ng-src="{{metaTags.getPageHost()}}{{project.typographyImage}}" alt="{{project.title}} Typography" class="img-typography"/>
             </div>
             <div class="clr"></div>
         </div>
@@ -49,38 +49,44 @@
     <div id="project-creative">
         <div class="section-title">
             <div class="title-wrapper">
-                <h4>Creative</h4>
+                <h4>Design & Development</h4>
                 <div class="title-underline"></div>
             </div>
         </div>
-        <img ng-src="{{project.creativeImage}}" alt="{{project.title}} Creative"/>
+        <img ng-src="{{metaTags.getPageHost()}}{{project.creativeImage}}" alt="{{project.title}} Creative"/>
         <p ng-bind-html="project.creativeDescr"></p>
     </div>
 
-    <div id="project-mobile-friendly">
+    <div id="project-mobile-friendly" ng-class="{true:'img-space', false:''}[project.mobileImageSpace]">
         <div class="section-title">
             <div class="title-wrapper">
                 <h4>Mobile Friendly</h4>
                 <div class="title-underline"></div>
             </div>
         </div>
-        <img ng-src="{{project.mobileImage}}" alt="{{project.title}} Mobile Friendly"/>
+        <img ng-src="{{metaTags.getPageHost()}}{{project.mobileImage}}" alt="{{project.title}} Mobile Friendly"/>
     </div>
 
     <div id="project-server">
         <div class="left">
-            <img ng-src="{{project.mockUpImage}}" alt="{{project.title}} Image"/>
+            <img ng-src="{{metaTags.getPageHost()}}{{project.mockUpImage}}" alt="{{project.title}} Image"/>
         </div>
         <div class="right">
             <div class="section-title">
                 <div class="title-wrapper">
-                    <h4>{{project.buildOnText}}</h4>
+                    <h4 ng-bind-html="project.buildOnText"></h4>
                     <div class="title-underline"></div>
                 </div>
             </div>
-            <img ng-src="{{project.buildOnImage}}" alt="{{project.title}} Server"/>
+            <img ng-src="{{metaTags.getPageHost()}}{{project.buildOnImage}}" alt="{{project.title}} Server"/>
         </div>
         <div class="clr"></div>
+    </div>
+
+    <div id="more-projects">
+        <a href="{{project.prevProjectUrl}}" class="prev-proj">{{project.prevProjectTitle}}</a>
+        <span>/</span>
+        <a href="{{project.nextProjectUrl}}" class="next-proj">{{project.nextProjectTitle}}</a>
     </div>
 
     <div id="make-it-happen">

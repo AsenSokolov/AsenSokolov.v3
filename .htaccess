@@ -1,9 +1,71 @@
-RewriteEngine On
-# If an existing asset or directory is requested go to it as it is
-RewriteBase /
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-RewriteRule ^ - [L]
+#RewriteEngine On
+## If an existing asset or directory is requested go to it as it is
+#RewriteBase /
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+#RewriteRule ^ - [L]
+#
+## If the requested resource doesn't exist, use index.html
+#RewriteRule ^ /index.php
 
-# If the requested resource doesn't exist, use index.html
-RewriteRule ^ /index.php
+#RewriteEngine On
+## If requested resource exists as a file or directory
+## (REQUEST_FILENAME is only relative in virtualhost context, so not usable)
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+## Go to it as is
+#RewriteRule ^ - [L]
+#
+## If non existent
+## If path ends with / and is not just a single /, redirect to without the trailing /
+#  RewriteCond %{REQUEST_URI} ^.*/$
+#  RewriteCond %{REQUEST_URI} !^/$
+#  RewriteRule ^(.*)/$ $1 [R,QSA,L]
+#
+## Handle Prerender.io
+#RequestHeader set X-Prerender-Token "KNKsRkTqAIzoVTktoZJs"
+#
+#RewriteCond %{HTTP_USER_AGENT} baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest [NC,OR]
+#RewriteCond %{QUERY_STRING} _escaped_fragment_
+#
+## Proxy the request
+#RewriteRule ^(.*)$ http://service.prerender.io/http://%{HTTP_HOST}$1 [P,L]
+#
+## If non existent
+## Accept everything on index.html
+#RewriteRule ^ /index.php
+
+
+<IfModule mod_headers.c>
+    RequestHeader set X-Prerender-Token "KNKsRkTqAIzoVTktoZJs"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    Options +FollowSymLinks
+    #RewriteRule ^api/(.*)$ http://vivule.ee/api/$1 [P,L]
+
+    # Don't rewrite files or directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+
+    RewriteCond %{REQUEST_URI}  ^/$
+    RewriteCond %{QUERY_STRING} ^_escaped_fragment_=/?(.*)$
+    RewriteRule ^(.*)$ /snapshots/%1? [NC,L]
+
+    # Prerender.io stuff
+    <IfModule mod_proxy_http.c>
+        RewriteCond %{HTTP_USER_AGENT} Googlebot|bingbot|Googlebot-Mobile|Baiduspider|Yahoo|YahooSeeker|DoCoMo|Twitterbot|TweetmemeBot|Twikle|Netseer|Daumoa|SeznamBot|Ezooms|MSNBot|Exabot|MJ12bot|sogou\sspider|YandexBot|bitlybot|ia_archiver|proximic|spbot|ChangeDetection|NaverBot|MetaJobBot|magpie-crawler|Genieo\sWeb\sfilter|Qualidator.com\sBot|Woko|Vagabondo|360Spider|ExB\sLanguage\sCrawler|AddThis.com|aiHitBot|Spinn3r|BingPreview|GrapeshotCrawler|CareerBot|ZumBot|ShopWiki|bixocrawler|uMBot|sistrix|linkdexbot|AhrefsBot|archive.org_bot|SeoCheckBot|TurnitinBot|VoilaBot|SearchmetricsBot|Butterfly|Yahoo!|Plukkie|yacybot|trendictionbot|UASlinkChecker|Blekkobot|Wotbox|YioopBot|meanpathbot|TinEye|LuminateBot|FyberSpider|Infohelfer|linkdex.com|Curious\sGeorge|Fetch-Guess|ichiro|MojeekBot|SBSearch|WebThumbnail|socialbm_bot|SemrushBot|Vedma|alexa\ssite\saudit|SEOkicks-Robot|Browsershots|BLEXBot|woriobot|AMZNKAssocBot|Speedy|oBot|HostTracker|OpenWebSpider|WBSearchBot|FacebookExternalHit [NC,OR]
+        RewriteCond %{QUERY_STRING} _escaped_fragment_
+
+        # Only proxy the request to Prerender if it's a request for HTML
+        RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent))(.*) http://service.prerender.io/http://vivule.ee/$2 [P,L]
+    </IfModule>
+
+    # Rewrite everything else to index.html to allow html5 state links
+    RewriteRule ^ index.php [L]
+
+</IfModule>

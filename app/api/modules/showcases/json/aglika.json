@@ -1,0 +1,39 @@
+{
+  "title" : "Aglika Company Website by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Aglika Website, Aglika Company Website, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/aglika/fb-aglika-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/aglika/aglika-cover.jpg",
+
+  "service": "Company Website",
+  "projectImage": "assets/img/showcases/aglika/aglika-project-image.jpg",
+
+  "generalInfo": "AGLIKA is a family-owned company, established as an industrial textile and furniture producer in 1968. Since its foundation, the company has continued to expand, diversify and innovate its products, following and anticipating a continuously evolving market.<br/><br/>Their 2 production units in Europe are located in the middle of Bulgaria, where more than 400 people are directly employed by the Company. AGLIKA is also present abroad with one overseas production plant in Florida, USA. AGLIKA is an industrial group consisting of its 7 technologically connected divisions: WEAVING; WARP-KNITTING; FINISHING; STITCHING; QUILTING; DIGITAL PRINTING and FURNITURE.",
+
+  "typographyMain": "Arial Regular",
+  "typographySecondary": "Arial Bold",
+  "typographyNative": "Arial",
+  "typographyDescr": "The Arial typeface is one of the most widely used designs of the last 30 years. Drawn in 1982 by Monotype Imaging designers Robin Nicholas and Patricia.",
+  "typographyImage": "assets/img/showcases/aglika/aglika-typography.png",
+
+  "creativeImage": "assets/img/showcases/aglika/aglika-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop several multilingual websites for different divisions of the company.<br/><br/><strong>PROJECT IMPLEMENTATION:</strong> Since 2013 I designed and developed 3 websites for this Client: AglikaUSA.com, AglikaEurope.com and Aglika.bg - that is 20 Main Pages and more than 60 Internal pages. All three websites have been optimised for great speed and mobile performance. I implemented many custom features like: inquiry form, portfolio pages, newsletters etc.<br/><br/>After the launch of the new websites for AglikaUSA.com and AglikaEurope.com there were more than 2.000 unique website visitors per month for each one of them with and average session duration of 3 minutes.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> Asen Sokolov",
+
+  "mobileImage": "assets/img/showcases/aglika/aglika-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/aglika/aglika-image-mockup.png",
+  "buildOnText": "Built with most popular<br/>open-source CMS",
+  "buildOnImage": "assets/img/showcases/aglika/aglika-platform.png",
+
+  "prevProjectTitle": "Hurricane Technologies Showcase",
+  "prevProjectUrl": "showcases/hurricane-technologies",
+  "nextProjectTitle": "DIFOTO Showcase",
+  "nextProjectUrl": "showcases/difoto"
+}

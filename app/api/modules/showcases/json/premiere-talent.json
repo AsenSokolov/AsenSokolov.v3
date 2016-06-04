@@ -1,0 +1,39 @@
+{
+  "title" : "Premiere Talent Event Platform by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Premiere Talent Event Platform, Premiere Talent Company Website, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/premiere-talent/fb-premiere-talent-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/premiere-talent/premiere-talent-cover.jpg",
+
+  "service": "Event Platform",
+  "projectImage": "assets/img/showcases/premiere-talent/premiere-talent-image.jpg",
+
+  "generalInfo": "Premiere Talent is the Ultimate Talent Platform, created for Talent, Management & Production by Talent, Management & Production. Premiere Talent is a group of industry professionals who have looked at this platform from all sides; <br/><br/> For Talent we have asked what does a Talent need, from a platform to be seen, to advice about developing their Talent & Management & Legal templates to ensure that they are protected & successful within the industry; <br/><br/> For Management we have allowed a larger access to a much bigger Talent pool, easy search of Genres & Geographical locations, the Talent Search provides a complete opportunity & easily manageable information; <br/><br/> For Production we provide instant & detailed content about the Talent, from their availability, fee’s, technical riders, logistical information, a one spot process to save time & money. The questions asked & answers found from a multi-side perspective, which will continue to evolve as we develop the platform. The sub-services we make available & the overall infra-structure & Talent will extend & grow to be the ultimate entertainment & event platform on the planet. ",
+
+  "typographyMain": "Helvetica Neue Light",
+  "typographySecondary": "Helvetica Neue Thin",
+  "typographyNative": "Arial",
+  "typographyDescr": "The Neue Helvetica sets new standards in terms of its form and number of variants. It is the quintessential sans serif font, timeless and neutral, and can be used for all types of communication.",
+  "typographyImage": "assets/img/showcases/premiere-talent/premiere-talent-typography.png",
+
+  "creativeImage": "assets/img/showcases/premiere-talent/premiere-talent-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop custom booking platform for artists and event managers.<br/><br/><strong>PROJECT  IMPLEMENTATION:</strong> The Premier Talent’s design is developed to be user oriented, simple to navigate and easy to understand. The platform offers a lot of custom features: event calendar, image galleries, video embedding widget, payments, content management system (CMS) which allows users activities and info tracking.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-Studio",
+
+  "mobileImage": "assets/img/showcases/premiere-talent/premiere-talent-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/premiere-talent/premiere-talent-image-mockup.png",
+  "buildOnText": "Built on",
+  "buildOnImage": "assets/img/showcases/premiere-talent/premiere-talent-platform.png",
+
+  "prevProjectTitle": "Qanect Showcase",
+  "prevProjectUrl": "showcases/qanect",
+  "nextProjectTitle": "MM Showcase",
+  "nextProjectUrl": "showcases/meadow-in-the-mountains"
+}

@@ -1,0 +1,39 @@
+{
+  "title" : "Petro Canada Facebook Application by Asen Sokolov",
+  "descr" : "Web developer based in Dubai, UAE. With more than 8 year experience and more than 100 project behind his back as a part of Xec-studio family.",
+  "keywords": "Petro Canada Facebook Application, Petro Canada Facebook Application Campaign, Freelance Developer DUBAI, Freelance Developer UAE, Designer UAE, Designer DUBAI, Design, Branding, Graphic Design, Storytelling, Interactive Design, Interaction Design, UI, UX, User Experience, Front-end Development, Development, CMS, Corporate Branding, Website & Application Development, Marketing, Digital Marketing, Web Design, Website Design, Website Design & Development, Website Production, Brand Architecture, Branded Solutions, Content, Development, Mobile, Interactive, Creative Services, Creative Direction, Graphical User Interface, Graphic Designers, Brand Development, Interactive Marketing, Digital Art, Brand Strategy, Social Media Content, Full-Blown Integrated Campaign, Award-Winning Creative Concepts, Web Development,Logo Design, Corporate Identity,  Logos, Mobile Websites, Responsive Websites, Creative Design, Landing Pages, Brand Development, UX Development, Campaign Development, Online Solutions, App Development, Banners, Websites, eCommerce, Online Stores, HTML5, CSS3, Javascript, jQuery, Ajax, Responsive Web Design, Mobile Development , Illustration, Typography, User Experience, Front and Back-end Development, User Interface Design, Project Management, Hand Drawing",
+
+  "fbImage" : "assets/img/showcases/petro-canada/fb-petro-canada-social-image.jpg",
+  "twImage" : "",
+
+
+  "coverTitle" : "",
+  "coverDescription" : "",
+  "coverImage" : "assets/img/showcases/petro-canada/petro-canada-cover.jpg",
+
+  "service": "Facebook Application",
+  "projectImage": "assets/img/showcases/petro-canada/petro-canada-project-image.jpg",
+
+  "generalInfo": "As a Suncor Energy business, Petro-Canada produces some of the purest base oils in the world – 99.9% pure. Their world-class refinery in Mississauga, Ontario, Canada (just outside of Toronto) has an annual capacity of over a billion litres. Petro-Canada is also the world's largest producer of pharmaceutical white oils. With over 350 premium quality lubricants, specialty fluids and greases, they're in business to keep your business running smoothly.",
+
+  "typographyMain": "Helvetica Neue Regular",
+  "typographySecondary": "Helvetica Neue Bold",
+  "typographyNative": "Arial",
+  "typographyDescr": "Helvetica is a widely used sans-serif typeface.  Over the years a wide range of variants have been  released in different weights, widths and sizes, as  well as matching designs for a range of non-Latin  alphabets.",
+  "typographyImage": "assets/img/showcases/petro-canada/petro-canada-typography.png",
+
+  "creativeImage": "assets/img/showcases/petro-canada/petro-canada-creative.jpg",
+  "creativeDescr": "<strong>PROJECT ASSIGNMENT:</strong> Design and develop Facebook game app to increase online awareness of the brand.<br/><br/><strong>PROJECT IMPLEMENTATION:</strong> We created an interactive game where users race across Canada. Developing a custom, pseudo-3D game engine that served as a contest entry mechanism was the only way to fit the tight deadline. We packed it with custom illustrations and animations combined with clean and user friendly interface.<br/><br/>The game was played by a huge number of people and helped Petro Canada significantly increase their fan base across North America.<br/><br/><strong>PROJECT DEVELOPED BY:</strong> XEC-STUDIO",
+
+  "mobileImage": "assets/img/showcases/petro-canada/petro-canada-mobile-friendly.png",
+  "mobileImageSpace": "true",
+
+  "mockUpImage": "assets/img/showcases/petro-canada/petro-canada-image-mockup.png",
+  "buildOnText": "Built with <br/>Adobe Flash",
+  "buildOnImage": "assets/img/showcases/petro-canada/petro-canada-platform.png",
+
+  "prevProjectTitle": "LG Showcase",
+  "prevProjectUrl": "showcases/lg",
+  "nextProjectTitle": "Exxon Mobil Showcase",
+  "nextProjectUrl": "showcases/exxon"
+}
